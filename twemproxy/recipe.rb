@@ -16,6 +16,7 @@ class TokyoCabinet < FPM::Cookery::Recipe
   end
 
   def install
+    (etc/'init.d').install_p(workdir/'twemproxy.init.d', 'twemproxy')
     make :install, 'DESTDIR' => destdir
   end
 end
