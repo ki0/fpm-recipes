@@ -17,6 +17,7 @@ class TokyoCabinet < FPM::Cookery::Recipe
 
   def install
     (etc/'init.d').install_p(workdir/'twemproxy.init.d', 'twemproxy')
+    (etc/'twemproxy').install_p(workdir/'yml.root.nutcracker', 'nutcracker.root.yml')
     make :install, 'DESTDIR' => destdir
   end
 end
