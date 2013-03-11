@@ -20,7 +20,7 @@
 ### END INIT INFO
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
-DAEMON=/usr/local/bin/memcached
+DAEMON=/usr/bin/memcached
 DAEMONBOOTSTRAP=/usr/share/memcached/scripts/start-memcached
 NAME=memcached
 DESC=memcached
