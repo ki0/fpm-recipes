@@ -1,4 +1,4 @@
-class TokyoCabinet < FPM::Cookery::Recipe
+class Twemproxy < FPM::Cookery::Recipe
   description 'A fast, light-weight proxy for memcached and redis'
 
   name     'twemproxy'
